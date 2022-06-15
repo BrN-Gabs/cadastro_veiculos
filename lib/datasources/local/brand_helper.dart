@@ -6,7 +6,7 @@ class BrandHelper {
   static const createSql = '''
     CREATE TABLE IF NOT EXISTS ${Brand.Table} (
       ${Brand.codeField} INTEGER PRIMARY KEY AUTOINCREMENT,
-      ${Brand.nameField} TEXT,
+      ${Brand.nameField} TEXT
     )
   ''';
 

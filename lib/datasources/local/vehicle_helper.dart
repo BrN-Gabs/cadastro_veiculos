@@ -17,7 +17,7 @@ class VehicleHelper {
 
   Future<Vehicle> insert(Vehicle vehicle) async {
     Database db = await DataBase().db;
-
+    print(vehicle);
     vehicle.code = await db.insert(Vehicle.Table, vehicle.toMap());
 
     return vehicle;

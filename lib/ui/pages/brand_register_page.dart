@@ -40,11 +40,7 @@ class _BrandRegisterPageState extends State<BrandRegisterPage> {
         child: Column(
           children: [
             TextFieldTxt(controller: _nameController, text: 'Nome da Marca'),
-            Button(
-              click: _createButtonDelete,
-              text: "Excluir",
-              type: ButtonEnum.square,
-            )
+            _createButtonDelete(),
           ],
         ),
       ),

@@ -39,7 +39,7 @@ class Vehicle {
       modelField: model,
       yearField: year,
       valueField: value,
-      brandField: brand,
+      brandField: brand.code,
     };
   }
 }

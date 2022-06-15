@@ -57,11 +57,7 @@ class _VehicleRegisterPageState extends State<VehicleRegisterPage> {
               controller: _valueController,
               text: 'Valor do Veículo',
               keyboard: TextInputType.number),
-          Button(
-            click: _createButtonDelete,
-            text: "Excluir",
-            type: ButtonEnum.square,
-          )
+          _createButtonDelete(),
         ],
       ),
     );
